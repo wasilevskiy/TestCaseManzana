@@ -9,68 +9,59 @@ namespace TestCaseConsole
     class ComputationPoints
     {
         private List<Point> _Data;
-        
-        public ComputationPoints(List<Point> Data )
+
+        public ComputationPoints(List<Point> Data)
         {
             _Data = Data;
         }
 
         public List<Point> Compute()
         {
-            Point minPoint = GetMinPoint();
-            double[] array = new double[_Data.Count];
-            int c = 0;
-            foreach(Point p in _Data)
-            {
-                array[c]= Math.Atan2(GetKatetY(minPoint, p), GetKatetX(minPoint, p));
-                c++;
-            }
-            Sort(ref _Data, array);
+
+            SortPoints(_Data);
             return _Data;
         }
-
-        private void Sort(ref List<Point> list, double [] array)
+        private void SortirovkaOnX(List<Point> list)
         {
-            double tempArr;
-            Point tempPoint;
-            for(int i = 0;i<array.Length-1;i++)
+            Point temp;
+            for (int i = 0; i < list.Count - 1; i++)
             {
-                for(int j=i+1;j<array.Length;j++)
+                for (int j = i + 1; j < list.Count; j++)
                 {
-                    if(array[i]>array[j])
+                    if(list[i].X>list[j].X)
                     {
-                        tempArr = array[i];
-                        array[i] = array[j];
-                        array[j] = tempArr;
-                        tempPoint = list[i];
+                        temp = list[i];
                         list[i] = list[j];
-                        list[j] = tempPoint;
+                        list[j] = temp;
                     }
                 }
             }
         }
-        private Point GetMinPoint()
+        private void SortirovkaOnY( List<Point> list)
         {
-            int min = _Data[0].X;
-            int index = 0;
-            for (int i = 0; i < _Data.Count; i++) 
+            Point temp;
+            for (int i = 0; i < list.Count - 1; i++)
             {
-                if(min>_Data[i].X)
+                for (int j = i + 1; j < list.Count; j++)
                 {
-                    min = _Data[i].X;
-                    index = i;
+                    if (list[i].X == list[j].X)
+                    {
+                        if (list[i].Y > list[j].Y)
+                        {
+                            temp = list[i];
+                            list[i] = list[j];
+                            list[j] = temp;
+                        }
+                    }
                 }
             }
-            return _Data[index];
         }
-        private int GetKatetY(Point minPoint, Point p)
+        
+        private void SortPoints(List<Point> list)
         {
-            return (p.Y - minPoint.Y);
+            SortirovkaOnX(list);
+            SortirovkaOnY(list);
         }
-        private int GetKatetX(Point minPoint, Point p)
-        {
-            return (p.X - minPoint.X);
-        }
-            
+                      
     }
 }
