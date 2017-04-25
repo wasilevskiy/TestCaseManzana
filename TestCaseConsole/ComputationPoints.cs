@@ -17,7 +17,6 @@ namespace TestCaseConsole
 
         public List<Point> Compute()
         {
-
             SortPoints(_Data);
             return _Data;
         }
