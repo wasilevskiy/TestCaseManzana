@@ -39,7 +39,7 @@
 3. Select в БД и простая информация записываются как LogTrace
 
 <details>
-<summary><h1>Gitflow</h1></summary> GitFlow
+<summary><h1>Gitflow</h1></summary> 
 Есть 4 ветки: Master, Develop, Test, Release.
 
 ## Master
