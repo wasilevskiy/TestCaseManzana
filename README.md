@@ -33,6 +33,7 @@
 </details>
 <details>
   <summary><h1>Логирование</h1></summary> 
+  ### Уровни
     1. Все exceptions записываются в LogError.
     2. Все манипуляции на create/update/delete в БД записываются как LogInfo
     3. Select в БД и простая информация записываются как LogTrace
