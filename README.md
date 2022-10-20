@@ -16,7 +16,6 @@
 | CENTROS.Imo.Pg				| Описание БД на PostgresSql в EF core										  |
 
 </details>
-  
 <details>
 <summary><h1>Строки конфига</h1></summary>
 
