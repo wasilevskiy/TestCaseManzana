@@ -3,7 +3,6 @@
 
 # Структура МС
 <details>
-<summary>показать</summary>
 
 Микросервис состоит из 6 проектов:
 
@@ -16,8 +15,9 @@
 | CENTROS.Imo.Domain			| Модели (бизнес, интеграции). Абстракции (интерфейсы)						  |
 | CENTROS.Imo.Pg				| Описание БД на PostgresSql в EF core										  |
 </details>
+
+# Строки конфига
 <details>
-<summary><h3>Строки конфига</h3></summary>
 
 ## Секция "ConnectionStrings"
 | Название						| Назначение																  |
