@@ -14,7 +14,6 @@
 | CENTROS.Imo.Processes			| библиотека с описанными процессами в движке								  |
 | CENTROS.Imo.Domain			| Модели (бизнес, интеграции). Абстракции (интерфейсы)						  |
 | CENTROS.Imo.Pg				| Описание БД на PostgresSql в EF core										  |
-
 </details>
 <details>
 <summary><h1>Строки конфига</h1></summary>
