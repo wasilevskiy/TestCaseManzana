@@ -13,7 +13,8 @@
 | CENTROS.Imo.Domain			| Модели (бизнес, интеграции). Абстракции (интерфейсы)						  |
 | CENTROS.Imo.Pg				| Описание БД на PostgresSql в EF core										  |
 
-# Строки конфига
+<details>
+<summary>Строки конфига</summary>
 
 ## Секция "ConnectionStrings"
 | Название						| Назначение																  |
@@ -26,6 +27,8 @@
 | FilePath				        | путь к файлу в shared folder системы Profile								   |
 | FileName						| название файла с расширением системы Profile								   |
 | ChunkLength					| количество строк в чанке при вставке в БД ФАСов из .csv файла системы Профайл|
+  
+</details>
 
 # Логирование
 1. Все exceptions записываются в LogError.
