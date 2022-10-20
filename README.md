@@ -16,7 +16,7 @@
 | CENTROS.Imo.Pg				| Описание БД на PostgresSql в EF core										  |
 </details>
 <details>
-<summary># Строки конфига</summary>
+# Строки конфига
 
 ## Секция "ConnectionStrings"
 | Название						| Назначение																  |
