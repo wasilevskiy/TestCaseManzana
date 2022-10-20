@@ -16,7 +16,7 @@
 | CENTROS.Imo.Domain			| Модели (бизнес, интеграции). Абстракции (интерфейсы)						  |
 | CENTROS.Imo.Pg				| Описание БД на PostgresSql в EF core										  |
 </details>
-
+#
 # Строки конфига
 <details>
 
