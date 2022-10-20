@@ -33,9 +33,9 @@
 </details>
 <details>
   <summary><h1>Логирование</h1></summary> 
-1. Все exceptions записываются в LogError.
-2. Все манипуляции на create/update/delete в БД записываются как LogInfo
-3. Select в БД и простая информация записываются как LogTrace
+    1. Все exceptions записываются в LogError.
+    2. Все манипуляции на create/update/delete в БД записываются как LogInfo
+    3. Select в БД и простая информация записываются как LogTrace
 </details>
 <details>
 <summary><h1>Gitflow</h1></summary> 
