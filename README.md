@@ -31,12 +31,12 @@
 | ChunkLength					| количество строк в чанке при вставке в БД ФАСов из .csv файла системы Профайл|
   
 </details>
-
-# Логирование
+<details>
+  <summary><h1>Логирование</h1></summary> 
 1. Все exceptions записываются в LogError.
 2. Все манипуляции на create/update/delete в БД записываются как LogInfo
 3. Select в БД и простая информация записываются как LogTrace
-
+</details>
 <details>
 <summary><h1>Gitflow</h1></summary> 
 Есть 4 ветки: Master, Develop, Test, Release.
@@ -80,9 +80,8 @@
 </details>
   
 <details>
-<summary>Трассировка приложения</summary>
-# Трассировка приложения
+  <summary><h1>Трассировка приложения</h1></summary>
 to be continued
 </details>
 
-#Методы API
+# Методы API
